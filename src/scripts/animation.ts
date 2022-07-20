@@ -17,18 +17,19 @@ timeline(".features").from(".features__card", {
 
 timeline(".goal__wrapper").from(".goal__goals", {
     scale:0.9,
-    duration:500
+    duration:20
 });
 
 
 
 timeline('.subscription__wrapper').from(".subscription", {
-    x:"-20%",
-    duration:0.5
+    opacity:.8,
+    scale:0.9,
+    duration:20
 });
 
 
 timeline('.testimonials__wrapper').from(".testimonial__card", {
     opacity:0.2,
-    duration:500
+    duration:20
 });
