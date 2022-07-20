@@ -1,0 +1,21 @@
+.header {
+    @include flexbox(space-between , center);
+    @extend .container;
+    background:white;
+    box-shadow: 0 3px 7px #c9c9c9;
+}
+
+.header__nav ul {
+    @include flexbox(center, center);
+    gap:1rem;
+}
+
+.header__btnWrapper {
+    background:$primary-color;
+    padding:.5rem 1rem;
+    a {
+        color:white;
+    }
+    border-radius: .4rem;
+    cursor:pointer;
+}

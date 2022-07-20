@@ -2,15 +2,350 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- Created with favvy-desktop -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x-32x.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x-16x.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    <meta name="msapplication-TileColor" content="#fffff">
+    <meta name="theme-color" content="#fffff">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
-    <title>Vite + TS</title>
+    <title>Welcome to fitness | your first step to being a better you</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+
+      <!-- Start of header-->
+      <header class="header">
+          <div class="header__logoWrapper">
+              <img src="/Logo.svg" alt="fitness logog"/>
+          </div>
+          <nav class="header__nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Training programs</a></li>
+              <li><a href="#">Trainers</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </nav>
+
+          <div class="header__btnWrapper">
+            <a href="#">Get Started</a>
+          </div>
+      </header>
+      <!-- end of header-->
+
+      <!-- Start of image wrapper -->
+      <section class="imageWrapper">
+        <img src="/fitness.jpg" alt="Fitness" class="imageWrapper__img"/>
+        <div class="imageWrapper__imgOverlay"> </div>
+        <div>
+          <h1 class="imageWrapper__text-lg">Take a bold step to achieve your body goals</h1>
+          <form class="imageWrapper__form">
+              <input type="text" placeholder="Enter your email address" class="imageWrapper__formInput"/>
+              <button class="imageWrapper__formBtn">Get started</button>
+          </form>
+        </div>
+      </section>
+      <!-- End of image wrapper -->
+
+      <!-- Features-->
+      <section class="features">
+          <h1 class="text-lg">Why Fit-Ness</h1>
+          <div class="features__container">
+            <!-- Features card 1 -->
+            <div class="features__card">
+                <div define-component="./assets/icons/gym.svg">
+                    <svg width="45" height="45" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="48" cy="48" r="48" fill="#FAFBFD"/>
+                      <g clip-path="url(#clip0_0_1)">
+                      <path d="M51.6562 52.6031C52.2375 52.6031 52.7906 52.3594 53.1937 51.9375C53.5875 51.5156 53.7937 50.9438 53.775 50.3813L53.025 35.5125C52.9687 34.3875 52.0312 33.5063 50.9156 33.5063H45.1125C43.9875 33.5063 43.0594 34.3969 43.0031 35.5219L42.2531 50.3813C42.225 50.9531 42.4312 51.5156 42.8344 51.9375C43.2375 52.3594 43.7906 52.6031 44.3719 52.6031H51.6562ZM67.35 69.0844V71.3531C67.35 71.7094 67.0687 72 66.7031 72H29.2969C28.9312 72 28.65 71.7094 28.65 71.3531V69.0844C28.65 68.8969 28.7344 68.7094 28.8844 68.5969L31.5844 66.3281C31.7062 66.2344 31.8562 66.1688 32.0062 66.1688H44.4562V60.8344H51.5531V66.1688H63.9937C64.1437 66.1688 64.2844 66.225 64.4062 66.3281L67.1156 68.5969C67.2656 68.7188 67.35 68.8969 67.35 69.0844Z" fill="#4F83E9"/>
+                      <path d="M32.2219 36.4313C32.4656 36.375 32.7094 36.3563 32.9625 36.3563H35.8031C36.0656 36.3563 36.3188 36.3844 36.5719 36.4406L36.5906 31.7344C60.3844 31.7906 59.3813 31.7812 59.4656 31.7906V36.45C59.7094 36.3938 59.9531 36.3656 60.2063 36.3656H63.0469C63.3 36.3656 63.5438 36.3937 63.7875 36.4406V31.7906C63.7875 29.3812 61.8281 27.4312 59.4281 27.4312H51.5625V25.7531C51.5625 24.7969 50.775 24 49.8094 24H46.2094C45.2438 24 44.4563 24.7969 44.4563 25.7531V27.4219H36.5813C34.1719 27.4219 32.2219 29.3812 32.2219 31.7812V36.4313ZM38.3719 47.4844L37.7344 39.8625C37.6406 38.8687 36.7875 38.0812 35.7938 38.0812H32.9625C31.9594 38.0812 31.1156 38.8687 31.0219 39.8625L30.3844 47.4844C30.2906 48.6562 31.2281 49.5844 32.3156 49.5844H36.45C37.575 49.5844 38.4656 48.6094 38.3719 47.4844ZM60.2063 38.0812C59.2031 38.0812 58.3594 38.8687 58.2656 39.8625L57.6281 47.4844C57.5344 48.6094 58.425 49.5844 59.5594 49.5844H63.6937C64.8281 49.5844 65.7188 48.6094 65.625 47.4844L64.9875 39.8625C64.8938 38.8687 64.05 38.0812 63.0469 38.0812H60.2063ZM39.9563 59.1094H56.0531C57.2344 59.1094 58.1906 58.1531 58.1906 56.9719C58.1906 55.8 57.2344 54.8438 56.0531 54.8438H39.9563C38.775 54.8438 37.8188 55.8 37.8188 56.9719C37.8188 58.1531 38.775 59.1094 39.9563 59.1094Z" fill="#4F83E9"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_0_1">
+                      <rect width="48" height="48" fill="white" transform="translate(24 24)"/>
+                      </clipPath>
+                      </defs>
+                  </svg>
+                </div>
+                <p class="features__card-text-md">
+                  Top Tier Gym equipment
+                </p>
+                <small class="features__card-text-sm">
+                  Come down to fit-ness where we have the best gym equipments in the country.
+                </small>
+            </div>
+            <!-- End of features card-->
+
+              <!-- Features card 1 -->
+            <div class="features__card">
+                <div>
+                    <svg width="45" height="45" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="48" cy="48" r="48" fill="#FAFBFD"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M48 34.803C43.431 27.6165 35.247 27.882 31.062 31.8555C26.7705 35.934 26.622 44.0865 30.9105 52.2405C33.8385 58.1925 41.334 64.1655 47.598 68.133C47.844 68.289 48.156 68.289 48.402 68.133C54.666 64.1655 62.1615 58.1925 65.0895 52.2405C69.378 44.0865 69.2295 35.934 64.938 31.857C60.753 27.882 52.569 27.6165 48 34.8045V34.803V34.803ZM33.375 48H37.875C38.0745 48 38.265 47.9205 38.406 47.781L40.6005 45.585L43.179 52.029C43.2945 52.3185 43.578 52.506 43.8885 52.5C44.2005 52.494 44.4765 52.296 44.5815 52.002L47.5455 43.7025L49.9035 51.9555C49.989 52.254 50.247 52.4685 50.556 52.497C50.8635 52.5255 51.1575 52.362 51.2955 52.086L54.5805 45.516L56.844 47.781C56.985 47.9205 57.1755 48 57.375 48H62.625C63.039 48 63.375 47.664 63.375 47.25C63.375 46.836 63.039 46.5 62.625 46.5H57.6855L54.906 43.719C54.735 43.5495 54.4935 43.4715 54.255 43.509C54.0165 43.548 53.8125 43.6995 53.7045 43.914L50.817 49.6905L48.3465 41.0445C48.2565 40.731 47.9745 40.5105 47.649 40.5C47.3235 40.4895 47.028 40.6905 46.9185 40.998L43.836 49.632L41.571 43.971C41.478 43.737 41.2725 43.566 41.0265 43.515C40.779 43.464 40.5225 43.542 40.344 43.719L37.5645 46.5H33.375C32.961 46.5 32.625 46.836 32.625 47.25C32.625 47.664 32.961 48 33.375 48V48Z" fill="#4F83E9"/>
+                  </svg>
+                </div>
+                <p class="features__card-text-md">
+                    Special Cardio Programs
+                </p>
+                <small class="features__card-text-sm">
+                  Come down to fit-ness where we have the best gym equipments in the country.
+                </small>
+            </div>
+            <!-- End of features card-->
+
+            <!-- Features card 3 -->
+            <div class="features__card">
+                <div>
+                    <svg width="45" height="45" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="48" cy="48" r="48" fill="#FAFBFD"/>
+                      <path d="M48 37.8225C51.81 37.8225 54.9075 34.725 54.9075 30.915C54.9075 27.0975 51.81 24 48 24C44.19 24 41.0925 27.0975 41.0925 30.9075C41.0925 34.7175 44.19 37.8225 48 37.8225ZM35.37 55.02H42.1275C46.5525 54.81 47.3325 52.0575 47.4075 51.735C47.46 51.4575 47.7 51.2625 47.9925 51.2625C48.2775 51.2625 48.5175 51.4575 48.5775 51.7425C48.585 51.7725 49.2525 54.8025 53.895 55.02H60.615C61.44 55.02 62.085 54.375 62.085 53.55V48.285C62.2125 42.45 52.98 41.1525 49.005 40.8675L48.7875 40.8525L51.0525 48.465L57.36 50.325C57.675 50.4225 57.855 50.7525 57.765 51.0675C57.69 51.315 57.45 51.495 57.195 51.495C57.135 51.495 57.075 51.4875 57.0225 51.4725L50.4 49.515C50.2125 49.4625 50.0625 49.3125 50.0025 49.1175L47.955 42.255L44.895 49.2675C44.8275 49.4175 44.7 49.5375 44.5425 49.5975L38.955 51.4725C38.91 51.4875 38.85 51.5025 38.775 51.5025C38.52 51.5025 38.295 51.3375 38.2125 51.0975C38.16 50.9475 38.1675 50.7825 38.2425 50.64C38.3175 50.4975 38.4375 50.3925 38.5875 50.3475L43.9125 48.5625L47.2725 40.86L47.025 40.875C43.035 41.1525 33.7575 42.435 33.885 48.27V53.565C33.9075 54.36 34.5675 55.02 35.37 55.02ZM63.63 63.8475C62.76 63.135 61.695 62.745 60.495 62.7L60.405 62.6925C60.03 62.6925 59.6475 62.73 59.2575 62.8125L52.68 64.6275L53.1375 64.785C55.215 65.4975 56.4825 67.0725 56.4525 68.895C56.43 69.99 55.95 70.9725 55.065 71.7375L54.75 72H60.3375C63.09 72 65.325 69.915 65.325 67.35C65.3325 66.0075 64.71 64.7325 63.63 63.8475Z" fill="#2465E3"/>
+                      <path d="M52.23 65.7675C51.57 65.61 50.85 65.4675 50.07 65.34L49.6725 65.2725H49.665C49.6275 65.265 49.5975 65.2575 49.545 65.2425L36.2475 62.6775C36.045 62.64 35.85 62.61 35.6175 62.595C35.58 62.595 35.535 62.5875 35.49 62.58L35.475 62.5725H35.415C35.28 62.565 35.145 62.5575 35.0175 62.5575C33.885 62.5575 32.88 62.8875 32.13 63.5175C31.185 64.305 30.6825 65.4825 30.6825 66.9375C30.6825 69.735 32.955 72.0075 35.7525 72.0075H50.97C50.9925 72.0075 51.4725 71.97 52.1175 71.8425C54 71.4675 55.23 70.3125 55.2675 68.88C55.2825 67.4325 54.0975 66.2175 52.23 65.7675ZM53.88 56.2125C50.5725 56.0625 48.9225 54.6525 48.12 53.505L48 53.325L47.88 53.505C47.085 54.6525 45.45 56.0625 42.165 56.2125H39.7425V58.8975C39.7425 59.0625 39.6675 59.2275 39.54 59.3475L36.975 61.59L49.755 64.7325C49.8 64.74 49.845 64.7475 49.89 64.755L49.935 64.77L59.0625 61.6275L56.46 59.3475C56.3325 59.235 56.2575 59.0625 56.2575 58.8975V56.2125H53.88Z" fill="#2465E3"/>
+                  </svg>
+                </div>
+                <p class="features__card-text-md">
+                  Top-notch yoga Experts
+                </p>
+                <small class="features__card-text-sm">
+                  Come down to fit-ness where we have the best gym equipments in the country.
+                </small>
+            </div>
+            <!-- End of features card-->
+
+          </div>
+      </section>
+      <!-- End of features-->
+
+
+      <!-- Start of goal section-->
+      <section class="goal__wrapper">
+        <h1 class="text-lg">Reach your body goal with us</h1>
+        <div class="goal__goals">
+            <div class="goal__goal">
+                <img class="goal__img" alt="Goal name"/>
+                <div class="goal__imgOverlay"></div>
+                <p>Total Body Circuit Training</p>
+            </div>
+
+            <div class="goal__goal">
+              <img class="goal__img" alt="Goal name"/>
+              <div class="goal__imgOverlay"></div>
+              <p>Push and Pull training</p>
+          </div>
+
+
+          <div class="goal__goal">
+            <img class="goal__img" alt="Goal name"/>
+            <div class="goal__imgOverlay"></div>
+            <p>Power lift training</p>
+          </div>
+
+
+          <div class="goal__goal">
+            <img class="goal__img" alt="Goal name"/>
+            <div class="goal__imgOverlay"></div>
+            <p>Explosive dynamic Training</p>
+          </div>
+
+
+          <div class="goal__goal">
+            <img class="goal__img" alt="Goal name"/>
+            <div class="goal__imgOverlay"></div>
+            <p>Muscle Isolation Training</p>
+          </div>
+
+
+          <div class="goal__goal">
+            <img class="goal__img" alt="Goal name"/>
+            <div class="goal__imgOverlay"></div>
+            <p>Endurance Training</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- End of goal-->
+
+      <!--Start of subscription -->
+
+      <section class="subscription__wrapper">
+
+        <h1 class="text-lg">Subscription packages</h1>
+
+        <div class="subscriptions">
+
+            <div class="subscription subscription--secondary">
+                <p class="subscription__plan"> Basic Plan</p>
+                <div>
+                  <span class="subscription__price">$50</span> <span class="subscription__month">/month</span>
+                </div>
+                <ul class="subscription__features">
+                  <li> Personal Trainers</li>
+                  <li>24/7 access to Gym equipment</li>
+                </ul>
+                <button>Subscribe</button>
+            </div>
+
+            <div class="subscription subscription--primary">
+              <p class="subscription__plan"> Premium Plan</p>
+              <div>
+                <span class="subscription__price">$300</span> <span class="subscription__month">/month</span>
+              </div>
+              <ul class="subscription__features">
+                <li> 2 Personal Trainers</li>
+                <li> All time access special servie</li>
+                <li>24/7 access to Gym equipment</li>
+                <li>Free kit and bonouses</li>
+              </ul>
+              <button>Subscribe</button>
+          </div>
+
+          <div class="subscription subscription--secondary">
+            <p class="subscription__plan"> Regular Plan</p>
+            <div>
+              <span class="subscription__price">$150</span> <span class="subscription__month">/month</span>
+            </div>
+            <ul class="subscription__features">
+              <li> 2 Personal Trainers</li>
+              <li>24/7 access to Gym equipment</li>
+            </ul>
+            <button>Subscribe</button>
+        </div>
+
+        </div>
+      </section>
+
+      <!-- End of subscription -->
+
+      <div class="testimonials__wrapper">
+          <h1 class="text-lg">Testimonials from our customers</h1>
+          <div class="testimonials">
+            <div class="testimonial__card">
+                <p>“...Definitely recommending this gym to my friends...”</p>
+                <div class="testimonial__user">
+                  <img class="testimonials__userPic" src="" alt="User"/>
+                  <small>Esther Howard</small>
+                </div>
+            </div>
+
+            <div class="testimonial__card testimonial__card--lg ">
+              <p>“...This is the best gym i've ever used. Service is so top notch...”</p>
+              <div class="testimonial__user">
+                <img class="testimonials__userPic" src="" alt="User"/>
+                <small>Martin ownes</small>
+              </div>
+            </div>
+
+            <div class="testimonial__card">
+              <p>“...Top tier gym, top tier equipment, top tier Fit-Ness”</p>
+              <div class="testimonial__user">
+                <img class="testimonials__userPic" src="" alt="User"/>
+                <small>General zod</small>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+
+        <!-- Footer section 1-->
+        <section class="footer__social">
+          <div class="footer__logoWrapper">
+            <img src="/Logo-white.svg" alt="logo white"/>
+          </div>
+
+          <div class="footer__socialIcons">
+            <!--Twitter icon-->
+            <a href="#" >
+              <svg width="20" height="20" viewBox="0 0 47 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M46.286 4.87415C44.616 5.61415 42.822 6.11415 40.936 6.34015C42.882 5.17574 44.3379 3.34309 45.032 1.18415C43.2037 2.27013 41.2027 3.03454 39.116 3.44415C37.7128 1.94588 35.8541 0.952806 33.8286 0.619102C31.8032 0.285398 29.7242 0.629737 27.9145 1.59866C26.1047 2.56758 24.6655 4.10688 23.8203 5.97756C22.9751 7.84825 22.7711 9.94565 23.24 11.9442C19.5354 11.7581 15.9112 10.7953 12.6028 9.11796C9.29443 7.44068 6.37568 5.08648 4.03599 2.20815C3.23599 3.58815 2.77599 5.18815 2.77599 6.89215C2.7751 8.42614 3.15286 9.93664 3.87575 11.2896C4.59864 12.6426 5.64432 13.7962 6.91999 14.6482C5.44055 14.6011 3.99374 14.2013 2.69999 13.4822V13.6022C2.69984 15.7536 3.44406 17.8389 4.80636 19.5041C6.16866 21.1694 8.06514 22.312 10.174 22.7382C8.80156 23.1096 7.36267 23.1643 5.96599 22.8982C6.56099 24.7494 7.71998 26.3682 9.28073 27.528C10.8415 28.6878 12.7258 29.3305 14.67 29.3662C11.3697 31.957 7.29377 33.3623 3.09799 33.3562C2.35475 33.3564 1.61215 33.313 0.873993 33.2262C5.13295 35.9645 10.0907 37.4178 15.154 37.4122C32.294 37.4122 41.664 23.2162 41.664 10.9042C41.664 10.5042 41.654 10.1002 41.636 9.70015C43.4586 8.3821 45.0318 6.74995 46.282 4.88015L46.286 4.87415Z" fill="#FAFBFD"/>
+              </svg>
+            </a>
+            <!-- Facebook icon-->
+            <a href="#" >
+                <svg width="20" height="20" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M34 0H2C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2V34C0 34.5304 0.210714 35.0391 0.585786 35.4142C0.960859 35.7893 1.46957 36 2 36H19.23V22.08H14.554V16.63H19.23V12.63C19.23 7.98 22.07 5.446 26.23 5.446C27.628 5.442 29.028 5.514 30.42 5.66V10.5H27.55C25.294 10.5 24.854 11.576 24.854 13.15V16.62H30.248L29.548 22.07H24.852V36H34C34.5304 36 35.0391 35.7893 35.4142 35.4142C35.7893 35.0391 36 34.5304 36 34V2C36 1.46957 35.7893 0.960859 35.4142 0.585786C35.0391 0.210714 34.5304 0 34 0Z" fill="#FAFBFD"/>
+              </svg>
+            </a>
+              <!-- Instagram icon -->
+              <a href="#" >
+                <svg  svg width="20" height="20" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M36.894 11.6099C36.8738 10.0952 36.5903 8.59547 36.056 7.17791C35.5927 5.98222 34.8851 4.89631 33.9783 3.98958C33.0716 3.08284 31.9857 2.37522 30.79 1.91191C29.3907 1.38663 27.9124 1.1026 26.418 1.07191C24.494 0.985914 23.884 0.961914 19 0.961914C14.116 0.961914 13.49 0.961914 11.58 1.07191C10.0863 1.10282 8.6087 1.38685 7.21 1.91191C6.01412 2.37489 4.92805 3.0824 4.02127 3.98918C3.11449 4.89596 2.40698 5.98203 1.944 7.17791C1.41767 8.57618 1.13425 10.0541 1.106 11.5479C1.02 13.4739 0.994003 14.0839 0.994003 18.9679C0.994003 23.8519 0.994003 24.4759 1.106 26.3879C1.136 27.8839 1.418 29.3599 1.944 30.7619C2.40776 31.9574 3.1158 33.0431 4.02288 33.9495C4.92996 34.8559 6.01613 35.5631 7.212 36.0259C8.60687 36.5723 10.0847 36.8767 11.582 36.9259C13.508 37.0119 14.118 37.0379 19.002 37.0379C23.886 37.0379 24.512 37.0379 26.422 36.9259C27.9163 36.8965 29.3947 36.6131 30.794 36.0879C31.9894 35.6241 33.075 34.9163 33.9817 34.0096C34.8884 33.1029 35.5962 32.0173 36.06 30.8219C36.586 29.4219 36.868 27.9459 36.898 26.4479C36.984 24.5239 37.01 23.9139 37.01 19.0279C37.006 14.1439 37.006 13.5239 36.894 11.6099ZM18.988 28.2039C13.88 28.2039 9.742 24.0659 9.742 18.9579C9.742 13.8499 13.88 9.71191 18.988 9.71191C21.4402 9.71191 23.792 10.686 25.5259 12.42C27.2599 14.154 28.234 16.5057 28.234 18.9579C28.234 21.4101 27.2599 23.7619 25.5259 25.4958C23.792 27.2298 21.4402 28.2039 18.988 28.2039ZM28.602 11.5259C28.3188 11.5262 28.0383 11.4706 27.7766 11.3623C27.5149 11.2541 27.2772 11.0953 27.0769 10.895C26.8766 10.6948 26.7178 10.457 26.6096 10.1953C26.5013 9.93359 26.4457 9.65312 26.446 9.36991C26.446 9.08692 26.5017 8.80669 26.61 8.54523C26.7183 8.28378 26.8771 8.04621 27.0772 7.8461C27.2773 7.64599 27.5149 7.48725 27.7763 7.37895C28.0378 7.27066 28.318 7.21491 28.601 7.21491C28.884 7.21491 29.1642 7.27066 29.4257 7.37895C29.6871 7.48725 29.9247 7.64599 30.1248 7.8461C30.3249 8.04621 30.4837 8.28378 30.592 8.54523C30.7003 8.80669 30.756 9.08692 30.756 9.36991C30.756 10.5619 29.792 11.5259 28.602 11.5259Z" fill="#FAFBFD"/>
+                </svg>
+              </a>
+          </div>
+
+          <div class="footer__newsletter">
+            <p> Subscribe to our news letter</p>
+          </div>
+
+          <form class="footer__form">
+            <input type="text" placeholder="Enter your email address" class="imageWrapper__formInput"/>
+            <button class="footer__formBtn">Get started</button>
+          </form>
+
+        </section>
+        <!-- End of footer section 1 -->
+
+        <!-- Footer section 2-->
+        <section class="footer__site">
+          <!-- Urls -->
+          <div class="footer__urlsWrapper">
+              <div class="footer__urlSection">
+                <p class="footer__urlHeader">Services</p>
+                <ul>
+                  <li><a href="#"> Blog </a></li>
+                  <li><a href="#"> Gym services </a></li>
+                  <li><a href="#"> Stay at home </a></li>
+                  <li><a href="#"> Programs </a></li>
+                  <li><a href="#"> Events </a></li>
+                </ul>
+              </div>
+
+              <div class="footer__urlSection">
+                <p class="footer__urlHeader">Careers</p>
+                <ul>
+                  <li><a href="#"> Trainers </a></li>
+                  <li><a href="#"> Gym personnels </a></li>
+                  <li><a href="#"> Management </a></li>
+                </ul>
+              </div>
+
+              <div class="footer__urlSection">
+                <p class="footer__urlHeader">Community</p>
+                <ul>
+                  <li><a href="#"> Outreaches </a></li>
+                  <li><a href="#"> Social Media </a></li>
+                  <li><a href="#"> Sponsorships </a></li>
+                  <li><a href="#"> Ambassadorships </a></li>
+                </ul>
+              </div>
+          </div>
+
+          <!-- Site info -->
+          <div class="footer__siteInfo">
+            <span> <a href="#">Terms of service</a></span>
+            <span> <a href="#">Privacy Policy </a></span>
+            <span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 0C4.486 0 0 4.486 0 10C0 15.514 4.486 20 10 20C15.514 20 20 15.514 20 10C20 4.486 15.514 0 10 0ZM2 10C2 9.101 2.156 8.238 2.431 7.431L4 9L6 11V13L8 15L9 16V17.931C5.061 17.436 2 14.072 2 10ZM16.33 14.873C15.677 14.347 14.687 14 14 14V13C14 12.4696 13.7893 11.9609 13.4142 11.5858C13.0391 11.2107 12.5304 11 12 11H8V8C8.53043 8 9.03914 7.78929 9.41421 7.41421C9.78929 7.03914 10 6.53043 10 6V5H11C11.5304 5 12.0391 4.78929 12.4142 4.41421C12.7893 4.03914 13 3.53043 13 3V2.589C15.928 3.778 18 6.65 18 10C17.9998 11.7647 17.4123 13.4791 16.33 14.873Z" fill="#FAFBFD"/>
+              </svg>
+            </span>
+            <span> Language:English</span>
+          </div>
+
+        </section>
+        <!-- End of footer section 2 -->
+      </footer>
+
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

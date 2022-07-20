@@ -1,0 +1,29 @@
+.features {
+    @extend .container;
+}
+
+.features__container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2rem;
+    @extend .container;
+}
+
+.features__card {
+    background:white;
+    padding:1rem;
+    border-radius:.4rem;
+    @include shadowEffect;
+    @include scaleHover;
+}
+
+.features__card-text-md {
+    font-weight: 600;
+    font-size:1.2rem;
+}
+
+.features__card-text-sm {
+    color: #9B9B9B;
+    font-size:.8rem;
+    margin:2rem 0;
+}

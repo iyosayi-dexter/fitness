@@ -1,0 +1,58 @@
+.imageWrapper {
+    width:100%;
+    height:30rem;
+    @extend .container;
+    background:rgba(black,.5);
+    @include flexbox(flex-start, center);
+    position:relative;
+    // overflow-y:hidden;
+}
+
+.imageWrapper__text-lg {
+    color:white;
+    width:75%;
+    font-size:2.2rem;
+    font-weight: normal;
+}
+
+.imageWrapper__img {
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    z-index:-10;
+}
+.imageWrapper__imgOverlay {
+    position:absolute;
+    @extend .fill;
+    background:rgba(black,.5);
+    z-index:-5;
+}
+
+.imageWrapper__form {
+    position:relative;
+    margin:2rem 0;
+    width:50%;
+    @include flexbox(space-between, center);
+    background:white;
+    border-radius:.4rem;
+    padding:.3rem;
+}
+
+.imageWrapper__formInput {
+    flex:.7;
+    padding:.7rem .4rem;
+}
+
+.imageWrapper__formBtn {
+    background:$primary-color;
+    padding:.5rem .3rem;
+    border-radius: .2rem;
+    color:white;
+    flex:.3;
+    cursor:pointer;
+}
+
+

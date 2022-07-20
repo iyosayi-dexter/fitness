@@ -1,0 +1,69 @@
+.subscription__wrapper {
+    background:white;
+    @extend .container-md;
+}
+.subscriptions {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2rem;
+    margin:3rem 0;
+}
+
+.subscription__price {
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+.subscription__plan {
+    background:white;
+    width:fit-content;
+    color:$primary-color;
+    border-radius:3rem;
+    padding:.5rem 1rem;
+    margin:1rem 0;
+}
+
+.subscription {
+    padding:1rem 1.4rem;
+    border-radius:.5rem;
+    width:90%;
+    @include scaleHover;
+    button {
+        width:100%;
+        padding:.8rem .8rem;
+        border-radius:.4rem;
+        margin:.9rem 0;
+        cursor:pointer;
+    }
+}
+
+.subscription__features {
+    margin:1.6rem 0;
+    font-size:.9rem;
+    li {
+        margin:.5rem 0;
+    }
+}
+
+.subscription--primary {
+    background:$primary-color;
+    color:white;
+    button {
+        background:white;
+        color:$primary-color;
+    }
+    .subscription__price, .subscription__month{
+        color:white;
+    }
+}
+
+.subscription--secondary {
+    background: #F9FBFF;
+    button {
+        background:$primary-color;
+        color:white;
+    }
+    .subscription__price, .subscription__month{
+        color:$primary-color;
+    }
+}

@@ -1,0 +1,94 @@
+$primary-font: 'Poppins', sans-serif;
+$container-padding: 1rem 3rem;
+$container-padding-md: 1rem 1.5rem;
+$container-padding-lg: 1rem 5rem;
+
+$primary-color:#2465E3;
+$highlight-color:#FAFBFD;
+$dark-blue-color:#0A1B3C;
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+  background:#FBFBFB;
+}
+
+button, input, select {
+  border:none;
+  outline:none;
+  font-family: $primary-font;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+
+li {
+  list-style:none;
+}
+
+.container {
+  padding:$container-padding;
+}
+
+.container-md {
+  padding:$container-padding-md;
+}
+.container-lg {
+  padding:$container-padding-lg;
+}
+.text-lg{
+  font-size:1.7rem;
+  font-weight: medium;
+  margin:2.4rem 0;
+}
+
+.fill {
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+}
+
+@mixin shadowEffect {
+  box-shadow: 2px 1px 7px #e8e8e8;
+}
+
+@mixin flexbox($justify-content , $align-items){
+  display:flex;
+  justify-content: $justify-content;
+  align-items:$align-items;
+}
+
+@mixin scaleHover{
+  transition:.4s;
+  &:hover {
+    transform:scale(1.03);
+  }
+}
+
+@import "header";
+@import "imageWrapper";
+@import "features";
+@import "subscription";
+@import "testimonials";
+@import "goal";
+@import "footer";

@@ -1,0 +1,40 @@
+.testimonials__wrapper {
+    @extend .container;
+    margin:3rem 0 6rem 0;
+}
+
+.testimonial__card {
+    @include scaleHover;
+    background:white;
+    padding:2rem;
+    border-radius:.4rem;
+}
+
+.testimonials {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2rem;
+}
+
+
+.testimonials__userPic {
+    width:3rem;
+    height:3rem;
+    border-radius:50%;
+    object-fit: cover;
+}
+
+.testimonial__user{
+    margin:2rem 0;
+    @include flexbox(flex-start, center);
+    gap:1rem;
+    small {
+        color:#9B9B9B;
+        font-weight: bolder;
+        font-size:.9rem;
+    }
+}
+
+.testimonial__card--lg {
+    transform:scale(1.08);
+}
