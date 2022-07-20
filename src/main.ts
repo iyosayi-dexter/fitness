@@ -11,10 +11,11 @@ import zod from './assets/images/zod.jpg'
 import girl from './assets/images/girl.jpg'
 import guy from './assets/images/guy.jpg'
 
+import './scripts/animation'
+
 const workout_images = [ wk1, wk2, wk3 , wk4 , wk5 , wk6]
 
 const testi__users = [girl, guy, zod]
-
 
 document.querySelectorAll<HTMLImageElement>(".goal__img").forEach((el:HTMLImageElement , index:number)=>{
     setImgSource(el,workout_images[index])
