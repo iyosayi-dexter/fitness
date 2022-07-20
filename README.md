@@ -1,6 +1,6 @@
 # Fitness
 
-A landing page for a fitness/workout company, It's made with HTML, scss and typescript.
+A landing page for a fitness/workout company, It's made with HTML, scss and typescript. Live app can be viewed at https://fitness-apx.web.app
 
 ## Scripts
 
