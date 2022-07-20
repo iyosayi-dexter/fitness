@@ -24,3 +24,12 @@ document.querySelectorAll<HTMLImageElement>(".goal__img").forEach((el:HTMLImageE
 document.querySelectorAll<HTMLImageElement>(".testimonials__userPic").forEach((el:HTMLImageElement, index:number)=>{
     setImgSource(el,testi__users[index])
 })
+
+
+document.querySelector('#close_btn')?.addEventListener("click", ()=>{
+    document.querySelector("#nav")?.classList.add('header__nav--close')
+})
+
+document.querySelector("#menu_btn")?.addEventListener("click", ()=>{
+    document.querySelector("#nav")?.classList.remove('header__nav--close')
+})

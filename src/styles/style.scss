@@ -3,6 +3,10 @@ $container-padding: 1rem 3rem;
 $container-padding-md: 1rem 1.5rem;
 $container-padding-lg: 1rem 5rem;
 
+$container-padding-mobile:1rem .9rem;
+$container-padding-mobile-md:1rem .4rem;
+$container-padding-mobile-lg:1rem 2rem;
+
 $primary-color:#2465E3;
 $highlight-color:#FAFBFD;
 $dark-blue-color:#0A1B3C;
@@ -27,6 +31,7 @@ html {
   font-size: 15px;
   scroll-behavior: smooth;
   background:#FBFBFB;
+  overflow-x:hidden;
 }
 
 button, input, select {
@@ -68,6 +73,14 @@ li {
   right:0;
 }
 
+.h-6 {
+  height:1.25rem;
+}
+
+.w-6 {
+  height:1.25rem;
+}
+
 @mixin shadowEffect {
   box-shadow: 2px 1px 7px #e8e8e8;
 }
@@ -85,6 +98,16 @@ li {
   }
 }
 
+@mixin grid($gap){
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:$gap;
+  @media screen and (max-width:700px) {
+        display:block;
+  }
+}
+
+
 @import "header";
 @import "imageWrapper";
 @import "features";
@@ -92,3 +115,25 @@ li {
 @import "testimonials";
 @import "goal";
 @import "footer";
+
+
+
+@media screen and (max-width:700px) {
+  .container {
+    padding:$container-padding-mobile;
+  }
+  .container-md {
+    padding:$container-padding-mobile-md;
+  }
+  .container-lg {
+    padding:$container-padding-mobile-lg;
+  }
+}
+
+
+.--mobile-only {
+  display:none;
+  @media screen and (max-width:700px) {
+    display:block;
+  }
+}

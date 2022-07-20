@@ -34,15 +34,18 @@
 .imageWrapper__form {
     position:relative;
     margin:2rem 0;
-    width:50%;
     @include flexbox(space-between, center);
     background:white;
     border-radius:.4rem;
     padding:.3rem;
+    width:70%;
+    @media screen  and (max-width:700px){
+        width:100%;
+    }
 }
 
 .imageWrapper__formInput {
-    flex:.7;
+    width:70%;
     padding:.7rem .4rem;
 }
 
@@ -51,7 +54,7 @@
     padding:.5rem .3rem;
     border-radius: .2rem;
     color:white;
-    flex:.3;
+    width: 30%;
     cursor:pointer;
 }
 
